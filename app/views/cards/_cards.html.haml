@@ -1,0 +1,13 @@
+%table.table.table-striped
+  %thead
+    %th English
+    %th Chinese
+    %th Pinyin
+    %th Notes
+  %tbody
+    - @cards.each do |card|
+      %tr
+        %td= card.english
+        %td= card.chinese
+        %td= card.pinyin
+        %td= card.notes

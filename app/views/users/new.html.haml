@@ -1,0 +1,10 @@
+.row
+  .col-xs-6.col-xs-offset-1
+    = form_for(User.new) do |f|
+      = f.label :email, "Email"
+      = f.text_field :email
+      %br/
+      = f.label :password, "Password"
+      = f.password_field :password
+      %br/
+      = f.submit "Sign up!", class: "btn btn-primary"

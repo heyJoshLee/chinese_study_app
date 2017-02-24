@@ -1,0 +1,10 @@
+= bootstrap_form_for([@user, Card.new], remote: true) do |f|
+  = f.label :english, "English"
+  = f.text_field :english
+  = f.label :chinese, "Chinese"
+  = f.text_field :chinese
+  = f.label :pinyin, "Pinyin"
+  = f.text_field :pinyin 
+  = f.label :notes, "Notes"
+  = f.text_area :notes
+  = f.submit "Create Card", class: "btn btn-primary"
